@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "my_master_thesis"
+version = "0.0.1"
+description = "Survival analysis on proteomics and transcriptomics data."
+authors = [
+  { name = "Jasmin St\u00f8vlb\u00e6k" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.13.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["my_master_thesis"]
+include = ["pyproject.toml", "my_master_thesis/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["my_master_thesis"]
+force-sort-within-sections = true
+
