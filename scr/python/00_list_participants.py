@@ -20,6 +20,6 @@ def list_participant_ids(agg_root: Path, out_file: Path):
         print(" ", pid)
 
 if __name__=="__main__":
-    agg_root = Path("data/processed/aggregates_cleaned_withREF")  # or wherever per‐run matrices live
+    agg_root = Path("data/for_analysis/fromPython_data_withREF_csv")  # or wherever per‐run matrices live
     out_txt   = Path("reports/csv_inspection/participant_ids.txt")
     list_participant_ids(agg_root, out_txt)

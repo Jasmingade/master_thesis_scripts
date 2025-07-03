@@ -31,19 +31,19 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument(
     "--indir",
-    default="data/processed/aggregates_withREF",
+    default="data/processed/aggregates",
     help="Directory of raw Parquet outputs"
 )
 parser.add_argument(
     "--outdir",
-    default="aggregates_cleaned_withREF",
+    default="aggregates_cleaned",
     help="Directory for cleaned Parquet outputs"
 )
 args = parser.parse_args()
 
 LOG_DIR = Path("reports") / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
-log_file = LOG_DIR / "02_clean_peptides.log"
+log_file = LOG_DIR / "06_clean_peptides.log"
 
 logging.basicConfig(
     level=logging.INFO,

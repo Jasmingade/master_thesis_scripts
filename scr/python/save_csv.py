@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # 1) Point to your Parquet file:
-pq = Path("data/for_analysis/fromPython_data/TMT10/PDC000110/01CPTAC_OVprospective_Proteome_JHU_20161209_matrix.parquet")
+pq = Path("data/for_analysis/fromPython_data_withREF/TMT10/PDC000110/01CPTAC_OVprospective_Proteome_JHU_20161209_matrix.parquet")
 
 # 2) Read it
 df = pd.read_parquet(pq)

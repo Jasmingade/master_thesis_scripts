@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--indir", type=Path,
         default=Path("data/processed/aggregates_cleaned"),
-        help="Top‐level folder (contains TMT10/, TMT11/ subfolders)"
+        help="Top-level folder (contains TMT10/, TMT11/ subfolders)"
     )
     parser.add_argument(
         "--outfile", type=Path,

@@ -29,9 +29,9 @@ def build_run_matrix(run_parquet: Path, out_dir: Path):
     print(f"Wrote {out_file}: {matrix.shape[0]} peptides × {matrix.shape[1]} samples")
 
 if __name__ == "__main__":
-    root     = Path("data/processed/aggregates_cleaned_withREF")
-    out_root = Path("data/for_analysis/fromPython_data_withREF")
-
+    root     = Path("data/processed/aggregates_cleaned")
+    out_root = Path("data/for_analysis/abundance_matrices")
+    
     for plex_dir in sorted(root.iterdir()):
         if not plex_dir.is_dir():
             continue
