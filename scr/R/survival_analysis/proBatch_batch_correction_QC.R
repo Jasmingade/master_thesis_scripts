@@ -13,7 +13,7 @@ library(pals)
 library(limma)
 
 # ---- Settings ----
-pdc_ids <- c("PDC000110", "PDC000116")
+pdc_ids <- c("PDC000110")
 data_types <- c("gene", "iso_log", "iso_frac")
 base_dir <- "data"
 input_dir <- file.path(base_dir, "processed", "proteomics")
@@ -31,8 +31,11 @@ age_group_colors  <- c(RColorBrewer::brewer.pal(6, "Dark2"), "#CCCCCC")
 sex_lvls          <- c("Female", "Male", "NA")
 sex_colors        <- c("lightcoral", "lightgreen", "grey")
 
+
 for (pdc_id in pdc_ids) {
-  cat("Processing", pdc_id, "\n")
+  cat("## -------------------- ##
+## Processing PDC000110 ##
+## -------------------- ##", pdc_id, "\n")
   pca_panel_before <- list(); pca_panel_after <- list()
   
   for (type in data_types) {
@@ -45,6 +48,7 @@ for (pdc_id in pdc_ids) {
     expr_matrix <- as.matrix(expr_df[, -1])
     rownames(expr_matrix) <- expr_df$feature
     sample_names <- colnames(expr_df)[-1]
+    cat("Processing", pdc_id, type, "from file:", expr_file, "\n")
     
     # ---- Annotation ----
     sample_annotation <- tibble(
@@ -84,8 +88,60 @@ for (pdc_id in pdc_ids) {
     # Save normalized
     norm_matrix_outfile <- file.path(output_base_dir, paste0(pdc_id, "_", type, "_cyclic_loess.csv"))
     write.csv(norm_matrix, norm_matrix_outfile, quote = FALSE, row.names = TRUE)
+    cat("Dimensions of norm_matrix before:", dim(norm_matrix), "\n")
     
-    # ---- 2. Batch correction (per-feature median centering) ----
+    # Remove features with NA rownames
+    na_rownames <- is.na(rownames(norm_matrix))
+    if (any(na_rownames)) {
+      cat("Removing", sum(na_rownames), "features with NA rownames\n")
+      norm_matrix <- norm_matrix[!na_rownames, , drop = FALSE]
+    }
+    stopifnot(!any(is.na(rownames(norm_matrix))))  # This should now pass
+    
+    # i. Sync annotation and matrix columns
+    good_samples <- intersect(colnames(norm_matrix), sample_annotation$FullRunName)
+    norm_matrix <- norm_matrix[, good_samples, drop = FALSE]
+    sample_annotation <- sample_annotation[sample_annotation$FullRunName %in% good_samples, ]
+    sample_annotation <- sample_annotation[match(colnames(norm_matrix), sample_annotation$FullRunName), ]
+    stopifnot(all(sample_annotation$FullRunName == colnames(norm_matrix)))
+    cat("All sample names match and are ordered!\n")
+    
+    # --- Debug checks ---
+    cat("dim(norm_matrix):", dim(norm_matrix), "\n")
+    stopifnot(ncol(norm_matrix) == nrow(sample_annotation))
+    stopifnot(identical(colnames(norm_matrix), sample_annotation$FullRunName))
+    stopifnot(length(rownames(norm_matrix)) == length(unique(rownames(norm_matrix))))
+    stopifnot(!any(is.na(rownames(norm_matrix))))
+    
+    
+    # ii. Build batch index list
+    by_batch <- split(seq_along(colnames(norm_matrix)), sample_annotation$batch)
+    cat("Batch sample sizes:", sapply(by_batch, length), "\n")
+    cat("max idx in by_batch:", max(unlist(by_batch)), "\n")
+    
+    # iii. Filter features
+    bad_features <- sapply(rownames(norm_matrix), function(f) {
+      any(sapply(by_batch, function(idx) {
+        # Defensive: Check for out-of-bounds
+        if (any(idx > ncol(norm_matrix))) {
+          cat(sprintf("Batch index out of bounds: max idx %d, ncol %d\n", max(idx), ncol(norm_matrix)))
+          return(TRUE)
+        }
+        # The actual two conditions:
+        all(is.na(norm_matrix[f, idx])) | sum(!is.na(norm_matrix[f, idx])) < 2
+      }))
+    })
+    
+    cat("Number of bad features:", sum(bad_features), "\n")
+    cat("Length of norm_matrix rows:", nrow(norm_matrix), "\n")
+    stopifnot(length(bad_features) == nrow(norm_matrix))  # Must match!
+    
+    # iiii. Subset
+    norm_matrix <- norm_matrix[!bad_features, , drop = FALSE]
+    cat("Dimensions of norm_matrix after:", dim(norm_matrix), "\n")
+    
+    
+    # ---- 2. Batch correction ----
     df_long <- matrix_to_long(norm_matrix,
                               sample_annotation = sample_annotation,
                               feature_id_col = "feature",
@@ -99,7 +155,8 @@ for (pdc_id in pdc_ids) {
       sample_id_col = "FullRunName",
       batch_col = "batch",
       feature_id_col = "feature",
-      measure_col = "Intensity"
+      measure_col = "Intensity",
+      
     )
     # Convert batch-corrected long df back to wide matrix
     batch_matrix <- long_to_matrix(
@@ -221,3 +278,10 @@ for (pdc_id in pdc_ids) {
   dev.off()
   cat("Saved PCA and HCLUST grids for", pdc_id, "\n")
 }
+
+
+
+
+
+
+

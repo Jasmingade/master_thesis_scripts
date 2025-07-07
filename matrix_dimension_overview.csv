@@ -1,0 +1,7 @@
+"pdc_id","data_type","n_features_before","n_samples_before","n_features_after","n_samples_after"
+"PDC000110","gene",5278,95,5277,0
+"PDC000110","iso_log",29352,95,29352,0
+"PDC000110","iso_frac",29352,95,29352,0
+"PDC000116","gene",4028,190,4027,190
+"PDC000116","iso_log",24572,190,24572,190
+"PDC000116","iso_frac",24572,190,24572,190
