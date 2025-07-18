@@ -1,0 +1,788 @@
+trying URL 'https://cran.rstudio.com/src/contrib/readr_2.1.5.tar.gz'
+Content type 'application/x-gzip' length 298065 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+* installing *source* package ‘readr’ ...
+** package ‘readr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-readr/00new/readr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (readr)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpj63SUQ/downloaded_packages’
+Warning message:
+package ‘impute’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+trying URL 'https://cran.rstudio.com/src/contrib/devtools_2.4.5.tar.gz'
+Content type 'application/x-gzip' length 374718 bytes (365 KB)
+==================================================
+downloaded 365 KB
+
+* installing *source* package ‘devtools’ ...
+** package ‘devtools’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (devtools)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpj63SUQ/downloaded_packages’
+Downloading GitHub repo BiostatOmics/Coxmos@HEAD
+Skipping 1 packages ahead of CRAN: BiocParallel
+Installing 32 packages: farver, scales, ggplot2, doBy, pbkrtest, car, rstatix, ggsignif, cowplot, ggsci, prodlim, BH, textshaping, ggtext, survMisc, ggpubr, rmeta, bootstrap, survivalROC, SuppDists, rARPACK, matrixStats, corpcor, ellipse, igraph, recipes, svglite, survminer, survcomp, patchwork, mixOmics, caret
+trying URL 'https://cloud.r-project.org/src/contrib/farver_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 1275981 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/scales_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 328671 bytes (320 KB)
+==================================================
+downloaded 320 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggplot2_3.5.2.tar.gz'
+Content type 'application/x-gzip' length 3580451 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doBy_4.7.0.tar.gz'
+Content type 'application/x-gzip' length 4588869 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pbkrtest_0.5.4.tar.gz'
+Content type 'application/x-gzip' length 75868 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/car_3.1-3.tar.gz'
+Content type 'application/x-gzip' length 384407 bytes (375 KB)
+==================================================
+downloaded 375 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rstatix_0.7.2.tar.gz'
+Content type 'application/x-gzip' length 405256 bytes (395 KB)
+==================================================
+downloaded 395 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggsignif_0.6.4.tar.gz'
+Content type 'application/x-gzip' length 587393 bytes (573 KB)
+==================================================
+downloaded 573 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/cowplot_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 1638386 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggsci_3.2.0.tar.gz'
+Content type 'application/x-gzip' length 2238454 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/prodlim_2025.04.28.tar.gz'
+Content type 'application/x-gzip' length 135526 bytes (132 KB)
+==================================================
+downloaded 132 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/BH_1.87.0-1.tar.gz'
+Content type 'application/x-gzip' length 14335542 bytes (13.7 MB)
+==================================================
+downloaded 13.7 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/textshaping_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 75793 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggtext_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 1211771 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/survMisc_0.5.6.tar.gz'
+Content type 'application/x-gzip' length 159191 bytes (155 KB)
+==================================================
+downloaded 155 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggpubr_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 1723260 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rmeta_3.0.tar.gz'
+Content type 'application/x-gzip' length 18794 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/bootstrap_2019.6.tar.gz'
+Content type 'application/x-gzip' length 30791 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/survivalROC_1.0.3.1.tar.gz'
+Content type 'application/x-gzip' length 19176 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/SuppDists_1.1-9.9.tar.gz'
+Content type 'application/x-gzip' length 140757 bytes (137 KB)
+==================================================
+downloaded 137 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rARPACK_0.11-0.tar.gz'
+Content type 'application/x-gzip' length 9860 bytes
+==================================================
+downloaded 9860 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/matrixStats_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 212156 bytes (207 KB)
+==================================================
+downloaded 207 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'application/x-gzip' length 22678 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ellipse_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 160353 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/igraph_2.1.4.tar.gz'
+Content type 'application/x-gzip' length 4997408 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/recipes_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 889576 bytes (868 KB)
+==================================================
+downloaded 868 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/svglite_2.2.1.tar.gz'
+Content type 'application/x-gzip' length 134155 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/survminer_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 2882134 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/survcomp_1.52.0.tar.gz'
+Content type 'application/gzip' length 837759 bytes (818 KB)
+==================================================
+downloaded 818 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/patchwork_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 3323546 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/mixOmics_6.26.0.tar.gz'
+Content type 'application/gzip' length 18901703 bytes (18.0 MB)
+==================================================
+downloaded 18.0 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/caret_7.0-1.tar.gz'
+Content type 'application/x-gzip' length 2273919 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+ERROR: failed to lock directory ‘/net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3’ for modifying
+Try removing ‘/net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-farver’
+* installing *source* package ‘BH’ ...
+** package ‘BH’ successfully unpacked and MD5 sums checked
+** using staged installation
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BH)
+* installing *source* package ‘textshaping’ ...
+** package ‘textshaping’ successfully unpacked and MD5 sums checked
+** using staged installation
+Package harfbuzz was not found in the pkg-config search path.
+Perhaps you should add the directory containing `harfbuzz.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'harfbuzz', required by 'virtual:world', not found
+Package 'fribidi', required by 'virtual:world', not found
+ERROR: configuration failed for package ‘textshaping’
+* removing ‘/net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/textshaping’
+* installing *source* package ‘rmeta’ ...
+** package ‘rmeta’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rmeta)
+* installing *source* package ‘bootstrap’ ...
+** package ‘bootstrap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-bootstrap/00new/bootstrap/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bootstrap)
+* installing *source* package ‘survivalROC’ ...
+** package ‘survivalROC’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-survivalROC/00new/survivalROC/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survivalROC)
+* installing *source* package ‘SuppDists’ ...
+** package ‘SuppDists’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-SuppDists/00new/SuppDists/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SuppDists)
+* installing *source* package ‘rARPACK’ ...
+** package ‘rARPACK’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rARPACK)
+* installing *source* package ‘matrixStats’ ...
+** package ‘matrixStats’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-matrixStats/00new/matrixStats/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (matrixStats)
+* installing *source* package ‘corpcor’ ...
+** package ‘corpcor’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (corpcor)
+* installing *source* package ‘ellipse’ ...
+** package ‘ellipse’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ellipse)
+* installing *source* package ‘igraph’ ...
+** package ‘igraph’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+In file included from /usr/include/string.h:548,
+                 from vendor/cigraph/vendor/glpk/env/stdc.h:35,
+                 from vendor/cigraph/vendor/glpk/env/env.h:25,
+                 from vendor/cigraph/vendor/glpk/draft/glpmat.c:22:
+In function ‘memset’,
+    inlined from ‘_glp_mat_amd_order1’ at vendor/cigraph/vendor/glpk/draft/glpmat.c:515:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘memset’,
+    inlined from ‘_glp_mat_symamd_ord’ at vendor/cigraph/vendor/glpk/draft/glpmat.c:557:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:548,
+                 from vendor/cigraph/vendor/glpk/env/stdc.h:35,
+                 from vendor/cigraph/vendor/glpk/env/env.h:25,
+                 from vendor/cigraph/vendor/glpk/misc/keller.c:23:
+In function ‘memset’,
+    inlined from ‘_glp_kellerman’ at vendor/cigraph/vendor/glpk/misc/keller.c:107:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘memset’,
+    inlined from ‘_glp_kellerman’ at vendor/cigraph/vendor/glpk/misc/keller.c:112:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:548,
+                 from vendor/cigraph/vendor/glpk/env/stdc.h:35,
+                 from vendor/cigraph/vendor/glpk/env/env.h:25,
+                 from vendor/cigraph/vendor/glpk/misc/wclique1.c:22:
+In function ‘memset’,
+    inlined from ‘_glp_wclique1’ at vendor/cigraph/vendor/glpk/misc/wclique1.c:111:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘memset’,
+    inlined from ‘_glp_wclique1’ at vendor/cigraph/vendor/glpk/misc/wclique1.c:113:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ specified bound between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+vendor/cigraph/vendor/glpk/npp/npp6.c: In function ‘_glp_npp_sat_encode_sum_ax’:
+vendor/cigraph/vendor/glpk/npp/npp6.c:853:17: warning: ‘__builtin_memset’ writing between 256 and 17179869176 bytes into a region of size 248 overflows the destination [-Wstringop-overflow=]
+  853 |          set[k] = NULL;
+      |                 ^
+vendor/cigraph/vendor/glpk/npp/npp6.c:836:15: note: at offset 8 into destination object ‘set’ of size 256
+  836 |       NPPLSE *set[1+NBIT_MAX], *lse;
+      |               ^~~
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-igraph/00new/igraph/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (igraph)
+* installing *source* package ‘recipes’ ...
+** package ‘recipes’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (recipes)
+* installing *source* package ‘scales’ ...
+** package ‘scales’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scales)
+* installing *source* package ‘svglite’ ...
+** package ‘svglite’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-svglite/00new/svglite/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (svglite)
+* installing *source* package ‘ggplot2’ ...
+** package ‘ggplot2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggplot2)
+* installing *source* package ‘ggsignif’ ...
+** package ‘ggsignif’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggsignif)
+* installing *source* package ‘cowplot’ ...
+** package ‘cowplot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (cowplot)
+* installing *source* package ‘ggsci’ ...
+** package ‘ggsci’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggsci)
+* installing *source* package ‘prodlim’ ...
+** package ‘prodlim’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-prodlim/00new/prodlim/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prodlim)
+* installing *source* package ‘ggtext’ ...
+** package ‘ggtext’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggtext)
+* installing *source* package ‘survMisc’ ...
+** package ‘survMisc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survMisc)
+* installing *source* package ‘patchwork’ ...
+** package ‘patchwork’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (patchwork)
+* installing *source* package ‘mixOmics’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mixOmics)
+* installing *source* package ‘caret’ ...
+** package ‘caret’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-caret/00new/caret/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (caret)
+* installing *source* package ‘doBy’ ...
+** package ‘doBy’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (doBy)
+* installing *source* package ‘survcomp’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-survcomp/00new/survcomp/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survcomp)
+* installing *source* package ‘pbkrtest’ ...
+** package ‘pbkrtest’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pbkrtest)
+* installing *source* package ‘car’ ...
+** package ‘car’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (car)
+* installing *source* package ‘rstatix’ ...
+** package ‘rstatix’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rstatix)
+* installing *source* package ‘ggpubr’ ...
+** package ‘ggpubr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggpubr)
+* installing *source* package ‘survminer’ ...
+** package ‘survminer’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survminer)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpj63SUQ/downloaded_packages’
+* installing *source* package ‘Coxmos’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+installing to /net/domus/home/people/s184275/R/x86_64-pc-linux-gnu-library/4.3/00LOCK-Coxmos/00new/Coxmos/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Coxmos)
+Warning messages:
+1: In i.p(...) : installation of package ‘farver’ had non-zero exit status
+2: In i.p(...) :
+  installation of package ‘textshaping’ had non-zero exit status
+Error in library(Cosmos) : there is no package called ‘Cosmos’
+Execution halted

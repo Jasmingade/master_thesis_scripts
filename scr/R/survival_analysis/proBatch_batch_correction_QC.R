@@ -13,10 +13,10 @@ library(pals)
 library(limma)
 
 # ---- Settings ----
-pdc_ids <- c("PDC000110")
+pdc_ids <- c("PDC000270")
 data_types <- c("gene", "iso_log", "iso_frac")
 base_dir <- "data"
-input_dir <- file.path(base_dir, "processed", "proteomics")
+input_dir <- file.path(base_dir, "processed", "proteomics_combined_matrices")
 clinical_file <- file.path(base_dir, "processed", "clin_df_all.csv")
 output_base_dir <- "data/analysis_results/probatch_diagnostics/batch_correction"
 dir.create(output_base_dir, recursive = TRUE, showWarnings = FALSE)
@@ -33,9 +33,7 @@ sex_colors        <- c("lightcoral", "lightgreen", "grey")
 
 
 for (pdc_id in pdc_ids) {
-  cat("## -------------------- ##
-## Processing PDC000110 ##
-## -------------------- ##", pdc_id, "\n")
+  cat("## -------- Processing:", pdc_id, " -------- ##\n")
   pca_panel_before <- list(); pca_panel_after <- list()
   
   for (type in data_types) {
@@ -61,7 +59,7 @@ for (pdc_id in pdc_ids) {
     ) %>%
       left_join(
         clin_df_all %>%
-          select(case_id, tumor_code, age, sex, race, ethnicity, age_group, bmi,
+          dplyr::select(case_id, tumor_code, age, sex, race, ethnicity, age_group, bmi,
                  tumor_stage, histologic_subtype, histologic_grade, tumor_size_cm,
                  alcohol_consumption, tobacco_smoking_history, vital_status, OS_time, OS_event),
         by = "case_id"
