@@ -89,65 +89,6 @@ preprocess_mat <- function(raw_mat, blk_name) {
 }
 
 # —— build omics_blocks depending on mode —— 
-omics_blocks <- list()
-if (mode_arg == "prot") {
-  # 1a) list PDC files, map to TCGA
-  # — PROT blocks —
-  cat("→ Listing all proteomics files...\n"); flush.console()
-  pf <- list.files(prot_dir,
-                           pattern = "^PDC[0-9]+_(gene|iso_log|iso_frac)_batch_corrected\\.csv$",
-                           full.names = TRUE)
-  cat("   Found", length(pf), "proteomics files\n"); flush.console()
-  if (length(pf)>0) {
-    cat("   file examples:", head(basename(pf),3), "…\n"); flush.console()
-  }
-  
-  pdc_to_tcga <- c(
-    PDC000110="OV",PDC000116="COAD",PDC000120="BRCA",PDC000125="UCEC",
-    PDC000127="KIRC",PDC000153="LUAD",PDC000204="GBM",PDC000221="HNSC",
-    PDC000234="LUSC",PDC000270="PAAD"
-  )
-  prot_blocks <- setNames(
-    lapply(pf, function(f) {
-      df <- fread(f, data.table=FALSE)
-      rownames(df) <- df[[1]]
-      mat <- as.matrix(df[,-1,drop=FALSE])
-      preprocess_mat(mat, basename(f))
-    }),
-    sapply(basename(pf), function(f) {
-      pdc  <- str_extract(f, "^PDC[0-9]+")
-      type <- str_extract(f, "(gene|iso_log|iso_frac)")
-      tcga <- pdc_to_tcga[[pdc]]
-      paste0("PROT_", tcga, "_", type)
-    })
-  )
-  omics_blocks <- prot_blocks
-  
-} else {
-  # mode == "trans"
-  tf <- list.files(trans_dir,
-                   pattern=paste0("^RNA_",cancer_arg,"_(gene|iso_log|iso_frac)\\.csv$"),
-                   full.names=TRUE)
-  trans_blocks <- setNames(
-    lapply(tf, function(f) {
-      df <- fread(f, data.table = FALSE)
-      # first column is your feature‐ID, so pull it off:
-      rownames(df) <- df[[1]]
-      df <- df[, -1, drop = FALSE]
-      mat <- t(as.matrix(df))
-    }),
-    # name each block “TRANS_<cancer>_<type>”
-    str_replace_all(basename(tf),
-                    c("^RNA_" = "TRANS_", "\\.csv$" = ""))
-  )
-  trans_blocks <- lapply(trans_blocks, function(mat) {
-    clean_ids    <- sub("-[0-9]{2}$", "", rownames(mat))
-    rownames(mat) <- clean_ids
-    mat
-  })
-  
-  omics_blocks <- trans_blocks
-}
 message("→ Found ---- ", paste0(length(pf)), " ---- proteomics files", "\n", "File Names:\n   ", paste(basename(pf), collapse=", "))
 #message("→ Found ---- ", paste0(length(tf)), " ---- transcriptomics files", "\n", "File Names:\n   ", paste(basename(tf), collapse=", "))
 
@@ -250,12 +191,12 @@ message("   Y                    : train =  ", nrow(sp$Y_train), "  /  test =  "
 
 # fit one Coxmos model, for brevity
 cvb <- cv.mb.coxmos("sb.splsicox", Xtr, Ytr, MIN_NVAR=5, MAX_NVAR=20,
-                    max.ncomp=2, n_run=3, k_folds=5, MIN_EPV=0.01,
+                    max.ncomp=1, n_run=3, k_folds=5, MIN_EPV=0.01,
                     remove_zero_variance=TRUE,
                     remove_variance_at_fold_level = TRUE,
                     remove_non_significant = FALSE,
                     remove_near_zero_variance  = TRUE, 
-                    PARALLEL=FALSE,)
+                    PARALLEL=TRUE,)
 
 mb  <- mb.coxmos("sb.splsicox", Xtr, Ytr,
                  n.comp=cvb$opt.comp, penalty=cvb$opt.penalty,
@@ -268,3 +209,22 @@ saveRDS(res, file.path(out_dir, fn))
 message("→ saved to ", file.path(out_dir, fn))
 
 message("→ Finished.  Full log is at: ", logfile)
+
+
+
+
+
+##### Save the processed omics matrices
+library(purrr)
+library(data.table)
+
+out_dir <- "path/to/output_csvs"
+dir.create(out_dir, showWarnings = FALSE)
+
+imap(omics_blocks, ~{
+  df <- as.data.frame(.x, stringsAsFactors = FALSE)
+  df <- cbind(feature_id = rownames(df), df)
+  fwrite(df,
+         file = file.path(out_dir, paste0(.y, ".csv")),
+         row.names = FALSE)
+})
